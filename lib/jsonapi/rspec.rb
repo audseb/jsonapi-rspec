@@ -4,6 +4,7 @@ require 'jsonapi/rspec/attributes'
 require 'jsonapi/rspec/relationships'
 require 'jsonapi/rspec/links'
 require 'jsonapi/rspec/meta'
+require 'jsonapi/rspec/included'
 require 'jsonapi/rspec/jsonapi_object'
 
 module JSONAPI
@@ -14,6 +15,7 @@ module JSONAPI
     include Relationships
     include Links
     include Meta
+    include Included
     include JsonapiObject
   end
 end
